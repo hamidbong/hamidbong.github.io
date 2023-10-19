@@ -1,0 +1,160 @@
+/* Réinitialisation des styles par défaut du navigateur */
+*{
+    box-sizing: border-box;
+    
+}
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Style de base pour le corps du site */
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: cursive;
+    background-color: #f0f0f0;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: white;
+    color: #333;
+    height: 30px;
+    text-align: center;
+    padding: 35px 0;
+}
+button{
+    float: left;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: 100px;
+    width: 40px;
+    height: 41px;
+    cursor: pointer;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style: none;
+    margin-right: 100px;
+    margin-top: -7px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.icon ul {
+    list-style: none;
+    margin-right: 100px;
+    margin-top: -7px;
+}
+.icon ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.icon a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.icon {
+    /* z-index: 999; */
+    /* background-color: black; */
+    float: right;
+    margin-top: -19px;
+}
+
+.icon svg{
+    /*border: solid black;*/
+    background-color: black;
+    border-radius: 55%;
+    position: relative;
+    z-index:3;
+}
+
+
+/* Style des articles */
+
+.profil {
+    border-radius: 50%;
+    padding-top: 50px;
+}
+.article {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+p svg {
+    margin: 70px;
+}
+
+.article h2 {
+    font-size: 24px;
+}
+
+/* Style du pied de page */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* POTOfolio section*/
+/* Style pour la section Portfolio */
+.portfolio {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style pour chaque projet dans le Portfolio */
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 16px;
+}
