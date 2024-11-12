@@ -32,10 +32,6 @@ header {
     max-width: 150px; /* Ajustez la taille selon vos préférences */
     height: auto;
     display: block;
-}
-
-
-.logo img {
     max-width: 50px;
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
