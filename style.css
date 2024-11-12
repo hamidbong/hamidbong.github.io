@@ -27,6 +27,25 @@ header {
     font-size: 24px;
     font-weight: normal;
 }
+/* Pour la section logo */
+.logo img {
+    max-width: 150px; /* Ajustez la taille selon vos préférences */
+    height: auto;
+    display: block;
+}
+
+
+.logo img {
+    max-width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
 
 /* Style de la navigation */
 nav ul {
