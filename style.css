@@ -11,6 +11,7 @@ header {
     color: white;
     padding: 18px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
 }
 
 .container {
@@ -87,7 +88,7 @@ nav ul li a:hover {
     background-image: url(./images/pexels-dushenkovsky-4100130.jpg);
     display: flex;
     align-items: center;
-    height: 580px;
+    height: 700px;
 }
 
 .about-content {
