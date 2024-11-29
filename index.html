@@ -12,47 +12,41 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Style pour centrer la section */
-        .badge-container {
+        /* Centrer toute la section */
+        .technologies {
             text-align: center;
-            margin: 50px auto;
             font-family: Arial, sans-serif;
         }
-
-        /* Style du badge */
+    
+        /* Wrapper pour aligner les badges sur la même ligne */
+        .badges-wrapper {
+            display: flex;
+            justify-content: center; /* Centre les badges horizontalement */
+            gap: 30px; /* Espacement entre les badges */
+            flex-wrap: wrap; /* Passe à une nouvelle ligne si l'écran est trop petit */
+        }
+    
+        /* Style pour chaque badge */
         .badge-container img {
-            width: 150px; /* Ajustez la taille du badge */
+            width: 150px;
             height: auto;
-            border-radius: 10px; /* Coins arrondis */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet au survol */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        /* Effet au survol */
+    
         .badge-container img:hover {
-            transform: scale(1.1); /* Agrandissement au survol */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Ombre renforcée */
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
-
-        /* Style du texte sous le badge */
-        .badge-container p {
-            margin-top: 10px;
-            color: #333;
+    
+        /* Style du texte sous tous les badges */
+        .badge-note {
+            margin-top: 20px;
             font-size: 16px;
+            color: #333;
         }
-
-        /* Style du lien */
-        .badge-container a {
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .badge-container a:hover {
-            color: #005bb5; /* Couleur plus foncée au survol */
-        }
-    </style>    
+    </style>
 </head>
 <body>
     <header>
@@ -205,21 +199,24 @@
             </div>
         </div>
     </section>
-    <section class="technologies">
+    <section class="technologies">  
         <h2>My Certifications</h2>
-        <div class="badge-container">
-            <a href="https://www.credly.com/badges/dc274337-e883-4d2f-a21b-d6b5673dc630" target="_blank">
-                <img src="./images/introduction-to-cybersecurity.png" alt="My Badge">
-            </a>
-            <p>Click the badge to view it on Credly.</p>
+        <div class="badges-wrapper">
+            <div class="badge-container">
+                <a href="https://www.credly.com/badges/dc274337-e883-4d2f-a21b-d6b5673dc630" target="_blank">
+                    <img src="./images/introduction-to-cybersecurity.png" alt="Cybersecurity Badge">
+                </a>
+            </div>
+            <div class="badge-container">
+                <a href="https://www.credly.com/badges/06a3f7c3-c292-4cf5-89d3-2fb85f21f7bf/public_url" target="_blank">
+                    <img src="./images/javascript-essentials-1.png" alt="JavaScript Badge">
+                </a>
+            </div>
         </div>
-        <div class="badge-container">
-            <a href="https://www.credly.com/badges/06a3f7c3-c292-4cf5-89d3-2fb85f21f7bf/public_url" target="_blank">
-                <img src="./images/javascript-essentials-1.png" alt="My Badge">
-            </a>
-            <p>Click the badge to view it on Credly.</p>
-        </div>
+        <p class="badge-note">Click the badge to view it on Credly.</p>
     </section>
+    
+    
     
     <section id="contact" class="contact-section">
         <div class="container">
