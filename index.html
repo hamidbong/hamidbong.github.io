@@ -252,11 +252,13 @@
         </div>
     </section>
     
+    
+
     <section id="message" class="message-section">
         <div>
             <h2>Envoyez-moi un message</h2>
             <p class="message-intro">Vous avez une question ou une opportunité ? Remplissez le formulaire ci-dessous, et je vous répondrai dans les plus brefs délais.</p>
-            <form action="submit_form.php" method="POST" class="message-form">
+            <form id="contact-form" class="message-form">
                 <div class="form-group">
                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
                 </div>
@@ -270,6 +272,34 @@
             </form>
         </div>
     </section>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('brahbong@gmail.com'); // Replace with your EmailJS user ID
+    
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form from submitting the traditional way
+    
+                // Collect form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value,
+                };
+    
+                // Send the email using EmailJS
+                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+                    .then(function(response) {
+                        console.log('Message sent successfully:', response);
+                        alert('Votre message a été envoyé avec succès!');
+                    }, function(error) {
+                        console.error('Error sending message:', error);
+                        alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
+                    });
+            });
+        })();
+    </script>
+    
+    
     
 
     <footer class="footer-section">
