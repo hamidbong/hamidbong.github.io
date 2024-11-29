@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Email configuration
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "brahbong@gmail.com"; // Replace with your email address
     $subject = "New Message from Contact Form";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
