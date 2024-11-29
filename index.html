@@ -10,8 +10,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Style pour centrer la section */
+        .badge-container {
+            text-align: center;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style du badge */
+        .badge-container img {
+            width: 150px; /* Ajustez la taille du badge */
+            height: auto;
+            border-radius: 10px; /* Coins arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet au survol */
+        }
+
+        /* Effet au survol */
+        .badge-container img:hover {
+            transform: scale(1.1); /* Agrandissement au survol */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Ombre renforcée */
+        }
+
+        /* Style du texte sous le badge */
+        .badge-container p {
+            margin-top: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Style du lien */
+        .badge-container a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .badge-container a:hover {
+            color: #005bb5; /* Couleur plus foncée au survol */
+        }
+    </style>    
 </head>
 <body>
     <header>
@@ -164,7 +205,21 @@
             </div>
         </div>
     </section>
-
+    <section class="technologies">
+        <h2>My Certifications</h2>
+        <div class="badge-container">
+            <a href="https://www.credly.com/badges/dc274337-e883-4d2f-a21b-d6b5673dc630" target="_blank">
+                <img src="./images/introduction-to-cybersecurity.png" alt="My Badge">
+            </a>
+            <p>Click the badge to view it on Credly.</p>
+        </div>
+        <div class="badge-container">
+            <a href="https://www.credly.com/badges/06a3f7c3-c292-4cf5-89d3-2fb85f21f7bf/public_url" target="_blank">
+                <img src="./images/javascript-essentials-1.png" alt="My Badge">
+            </a>
+            <p>Click the badge to view it on Credly.</p>
+        </div>
+    </section>
     
     <section id="contact" class="contact-section">
         <div class="container">
